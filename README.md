@@ -1,2 +1,2 @@
 # linuxCommands
-Linux SSH Command Line Use full Commands
+Linux SSH Command Line Handy Commands
