@@ -49,3 +49,6 @@ mysqldump –u buzios -psenhapessoal bancodados > arquivo.sql
 
 # Restaurar de DB com Linha Comandos
 mysql –u buzios -psenhapessoal bancodados < arquivo.sql
+
+# Encontrar Registos Duplicados no Banco de Dados, Neste caso Emails
+SELECT email, COUNT(email) FROM contacts GROUP BY email HAVING COUNT(email) > 1;
