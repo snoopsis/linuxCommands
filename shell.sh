@@ -34,7 +34,7 @@ sudo tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system /
 sudo tar -xvpzf /path/to/backup.tar.gz -C /restore/location --numeric-owner 
 
 #Listar maquinas ligadas na VPN
-sudo cat /etc/openvpn/openvpn-status.log
+sudo cat /etc/openvpn/server/openvpn-status.log
 
 #Usar o comando scp para transferir arquivos
 scp examplefile yourusername@yourserver:/home/yourusername/
