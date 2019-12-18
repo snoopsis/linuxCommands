@@ -4,6 +4,9 @@ sed -ne '/^Package: \(.*\)/{s//\1/;h;};/^Installed-Size: \(.*\)/{s//\1/;G;s/\n/ 
 #Atualizar por completo todos os pacotes instalados:
 sudo apt-get update && sudo apt-get upgrade
 
+# Comandos para saber IP no Linux
+$ ip a
+$ ip a show eth0
 
 #Remover por completo um pacote:
 sudo apt-get remove --purge mysql*
