@@ -120,7 +120,7 @@ echo "Just testing my sendmail gmail relay" | mail -s "Sendmail gmail Relay" seu
 sudo sysctl net.ipv4.ip_forward=1
 
 # Configura da porta 14900 do servidor WEB para o servico da maquina local na porta 80
-sudo iptables -t nat -A PREROUTING -p tcp --dport 17300 -j DNAT --to-destination 10.8.0.1:3000
+sudo iptables -t nat -A PREROUTING -p tcp --dport 17500 -j DNAT --to-destination 10.8.0.2:80
 
 # Faz uma ultima configuracao no iptables e NAT
 sudo iptables -t nat -A POSTROUTING -j MASQUERADE
