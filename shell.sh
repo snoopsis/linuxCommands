@@ -236,6 +236,14 @@ chmod -R 0777
 # certifica todos os sites com SSL na VPS
 sudo certbot --apache
 
+# Criar e copiar repositorio para o github
+echo "# buziosFrontEnd" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/snoopsis/buziosFrontEnd.git
+git push -u origin master
+
 
 
 
