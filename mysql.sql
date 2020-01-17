@@ -52,3 +52,6 @@ mysql –u buzios -psenhapessoal bancodados < arquivo.sql
 
 # Encontrar Registos Duplicados no Banco de Dados, Neste caso Emails
 SELECT email, COUNT(email) FROM contacts GROUP BY email HAVING COUNT(email) > 1;
+
+# Delete duplicate Records with DELETE JOIN
+DELETE e1 FROM voos e1 INNER JOIN voos e2 on e1.id < e2.id AND e1.numero = e2.numero;
