@@ -55,3 +55,6 @@ SELECT email, COUNT(email) FROM contacts GROUP BY email HAVING COUNT(email) > 1;
 
 # Delete duplicate Records with DELETE JOIN
 DELETE e1 FROM voos e1 INNER JOIN voos e2 on e1.id < e2.id AND e1.numero = e2.numero;
+
+# Adicinar coluna na tabela MYSQL
+ALTER TABLE vendors ADD COLUMN phone VARCHAR(15) AFTER name;
