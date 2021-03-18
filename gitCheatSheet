@@ -1,0 +1,9 @@
+git init
+git add .
+git commit -m "First commit"
+git remote -v
+git push origin main
+git remote set-url origin https://github.com/your/repository
+git rm --cached -r node_modules
+$ git pull remotename branchname
+# Captura atualizações online e faz merge delas em seu trabalho local
